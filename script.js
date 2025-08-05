@@ -1,5 +1,11 @@
-const buttonEl = document.getElementById("roll-btn");
+const buttonEl = document.getElementById("roll-btn")
+const diceEl = document.getElementById("dice")
+
+
 
 buttonEl.addEventListener("click", () => {
-  console.log("clicked");
-});
+  diceEl.classList.add('roll-animation')
+  setTimeout(() => {
+    diceEl.classList.remove('roll-animation')
+  }, 1000)
+})
